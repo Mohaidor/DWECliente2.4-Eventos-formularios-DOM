@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Eventos, Formularios, DOM</title>
+  </head>
+  <body>
+    <section>
+      <h1>T2_A4 - Eventos, formularios, DOM</h1>
+      <article id="ejer1">
+        <h2>EJERCICIO 1:</h2>
+        <form action="" id="form">
+          <label for="nombre">Nombre:&nbsp;</label>
+          <input type="text" name="nombre" id="nombre" />
+          <span id="errorNombre"></span>
+          <br />
+          <label for="direccion">Dirección:&nbsp;</label>
+          <input type="text" name="direccion" id="direccion" />
+          <span id="errorDireccion"></span>
+          <br />
+          <label for="nif">NIF:&nbsp;</label>
+          <input type="text" name="nif" id="nif" />
+          <span id="errorNif"></span>
+          <br />
+          <label for="fecha">Fecha:&nbsp;</label>
+          <input type="date" name="fecha" id="fecha" />
+          <span id="errorFecha"></span>
+          <br />
+          <label for="cPostal">Código Postal:&nbsp;</label>
+          <input type="text" name="cPostal" id="cPostal" />
+          <span id="errorCpostal"></span>
+          <br />
+          <label for="pais">País:&nbsp;</label>
+          <select name="pais" id="pais">
+            <option value="-1">Escoge una opción</option>
+            <option value="España">España</option>
+            <option value="Francia">Francia</option>
+            <option value="Italia">Italia</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Belgica">Bélgica</option>
+            <option value="Suiza">Suiza</option>
+          </select>
+          <span id="errorPais"></span>
+          <br />
+          <label for="genero">Genero:&nbsp;</label>
+          <input type="radio" name="genero" value="hombre" />Hombre
+          <input type="radio" name="genero" value="mujer" />Mujer
+          <input type="radio" name="genero" value="n/d" />Prefiero no decirlo
+          <span id="errorGenero"></span>
+          <br />
+          <label for="preferencias">Color/es preferido/s:&nbsp;</label>
+          <input type="checkbox" name="colores" value="rojo" />Rojo
+          <input type="checkbox" name="colores" value="verde" />Verde
+          <input type="checkbox" name="colores" value="azul" />Azul
+          <span id="errorColores"></span>
+
+          <br />
+          <label for="Telefono">Teléfono:&nbsp;</label>
+          <input type="tel" name="telefono" id="telefono" />
+          <span id="errorTelefono"></span>
+          <br />
+          <label for="email">E-mail:&nbsp;</label>
+          <input type="text" name="email" id="email" />
+          <span id="errorEmail"></span>
+          <br />
+          <label for="password">Password:&nbsp;</label>
+          <input type="password" name="password" id="password" />
+          <span id="errorPassword"></span>
+          <br />
+          <label for="verification-pass">Repite el password:&nbsp;</label>
+          <input type="password" name="password2" id="password2" />
+          <span id="errorPassword2"></span>
+          <br />
+          <br />
+          <input type="submit" value="Enviar" />&nbsp;
+          <input type="reset" value="Borrar" id="borrar" />
+          <p>Todos los campos son obligatorios.</p>
+        </form>
+        <hr />
+      </article>
+      <article id="ejer2">
+        <h2>EJERCICIO 2:</h2>
+        <h3>
+          - Al hacer hover con el raton sobre este párrafo cambia el color de fondo a uno
+          random
+        </h3>
+        <p id="p1">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
+          impedit expedita maxime, fugiat enim necessitatibus temporibus
+          voluptatem laborum quis natus tempora perspiciatis itaque nemo veniam
+          voluptatum blanditiis? Quasi, et earum.
+        </p>
+        <h3>
+          - Al hacer hover con el raton sobre este párrafo cambia el color de letra a uno
+          random
+        </h3>
+        <p id="p2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+          maxime porro consequuntur fugit dolorem optio velit enim iure cum
+          voluptatibus ex quibusdam? Nulla, adipisci nemo quos culpa velit
+          libero voluptate.
+        </p>
+        <h3>
+          - Al hacer hover con el raton sobre este párrafo cambia el fondo y la letra a uno
+          random
+        </h3>
+        <p id="p3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+          nulla reiciendis? Minima laboriosam vel nemo odio. Ab, minus.
+          Consequatur quidem, hic quis veritatis eaque corrupti eligendi
+          dolores. Saepe, quasi perspiciatis.
+        </p>
+      </article>
+      <hr />
+      <article id="ejer3">
+        <h2>EJERCICIO 3:</h2>
+        <p class="parrafos">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          impedit ipsum iste necessitatibus atque ipsa doloribus. Ad nobis
+          debitis exercitationem quis. Fugit iusto dignissimos voluptas
+          architecto corporis soluta consectetur repudiandae unde veritatis
+          dolores explicabo totam, asperiores ratione numquam quidem illo at
+          odio. Incidunt, reprehenderit explicabo suscipit repellendus sequi
+          praesentium voluptate?
+        </p>
+        <p class="parrafos">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+          consequatur quis laborum quia quos magni officia dolor! Laborum
+          laboriosam quasi vero voluptate delectus inventore non voluptatem
+          voluptatum nostrum deleniti rem id officiis libero architecto
+          dignissimos ipsum dicta adipisci, natus, excepturi deserunt magnam
+          eius exercitationem necessitatibus voluptatibus. Veniam reprehenderit
+          porro animi.
+        </p>
+        <p class="parrafos">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus in
+          voluptate magnam incidunt at provident eveniet, minima nostrum quasi
+          laudantium ducimus illo dolorum deleniti soluta. Ut, magnam ipsum
+          soluta expedita odio quidem blanditiis delectus debitis quasi quae!
+          Deserunt possimus harum temporibus dolor est, corrupti vitae vel.
+          Omnis eius alias fuga.
+        </p>
+        <p class="parrafos">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+          repudiandae neque voluptatum ex? Eligendi atque reprehenderit eos. Ut
+          optio provident rerum maiores ad quisquam delectus veritatis ex qui
+          ullam mollitia rem, excepturi ea voluptatibus sequi alias! Rerum
+          distinctio magnam quos laborum, magni dolorem enim consectetur esse
+          iusto maxime sint animi?
+        </p>
+        <input type="button" value="Colorear" id="colorea" />
+      </article>
+      <hr />
+      <article id="ejer4">
+        <h2>EJERCICIO 4:</h2>
+        <p>Pulsa el botón de</p>
+        <input type="button" value="añadir" id="anyadir" />
+        <p>o</p>
+        <input type="button" value="eliminar" id="eliminar" />
+        <p>un elemento a la lista</p>
+
+        <ol>
+          <li>Primer dato</li>
+        </ol>
+      </article>
+      <hr />
+      <article id="ejer5">
+        <h2>EJERCICIO 5:</h2>
+        <p id="parrafo1">
+          <b>id = parrafo1</b><br />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+          expedita hic porro officiis blanditiis fugit, culpa voluptate animi.
+          Explicabo, dignissimos?
+        </p>
+        <p id="parrafo2">
+          <b>id = parrafo2</b><br />
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed veniam
+          est minus sint voluptatem soluta cumque vero molestiae ducimus vel.
+        </p>
+        <p id="parrafo3">
+          <b>id = parrafo3</b><br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In, a.
+          Tenetur obcaecati, repudiandae excepturi officia ea optio blanditiis?
+          Aperiam, facere.
+        </p>
+        <p id="parrafo4">
+          <b>id = parrafo4</b><br />
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nam
+          veniam deserunt cum dicta asperiores eos nemo soluta rerum quas?
+        </p>
+        <input type="text" id="idParrafo" />
+        <input type="button" value="Agrandar" id="agrandar" />
+        <input type="button" value="Reducir" id="reducir" />
+        <input type="button" value="Original" id="original" />
+      </article>
+      <hr />
+      <article id="ejer6">
+        <h2>EJERCICIO 6:</h2>
+        <ol>
+          <li>
+            <input type="checkbox" name="preguntas" />Cuando mandas un mensaje
+            por WhatsApp esperas siempre al doble check. Si no aparece vuelves a
+            abrir el terminal para revisarlo al rato.
+          </li>
+          <li>
+            <input type="checkbox" name="preguntas" />Antes de acostarte siempre
+            miras el móvil a ver si tienes mensajes o notificaciones.
+          </li>
+          <li>
+            <input type="checkbox" name="preguntas" />Te despiertas antes de
+            tiempo para jugar, mandar mensajes, actualizar perfiles,... con el
+            teléfono móvil.
+          </li>
+          <li>
+            <input type="checkbox" name="preguntas" />Si sales de casa sin el
+            móvil volverías a cogerlo aunque llegues tarde a tu cita
+          </li>
+          <li>
+            <input type="checkbox" name="preguntas" />Tienes miedo a quedarte
+            sin batería.
+          </li>
+          <li>
+            <input type="checkbox" name="preguntas" />Cuando tienes la batería
+            baja desactivas ciertas aplicaciones u opciones del teléfono como la
+            WiFi, bluetooth para no quedarte sin batería.
+          </li>
+          <li>
+            <input type="checkbox" name="preguntas" />Tienes ansiedad cuando
+            tienes llamadas perdidas. Llamas a los números y te preocupas si no
+            responden.
+          </li>
+          <li>
+            <input type="checkbox" name="preguntas" />Miras la cobertura cuando
+            estás en algún sitio con los amigos, esperando, etc.
+          </li>
+          <li>
+            <input type="checkbox" name="preguntas" />Sueles hacer alguna otra
+            cosa mientras que miras al móvil como comer, lavarte los dientes,
+            etc.
+          </li>
+          <li>
+            <input type="checkbox" name="preguntas" />Vas al baño siempre con el
+            móvil.
+          </li>
+        </ol>
+        <p>Recuerda marcar todas las cuestiones arriba expuestas que creas que siempre realizas</p>
+        <input type="button" value="Comprueba si sufres nomofobia" id="botonComprueba" />
+        <h4 id="resultado"></h4>
+        <h4 id="solucion"></h4>
+      </article>
+    </section>
+    <script src="JavaScript1.js"></script>
+    <script src="JavaScript2.js"></script>
+    <script src="JavaScript3.js"></script>
+    <script src="JavaScript4.js"></script>
+    <script src="JavaScript5.js"></script>
+    <script src="JavaScript6.js"></script>
+    
+  </body>
+</html>
